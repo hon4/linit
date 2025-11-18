@@ -2,6 +2,7 @@
 #include <filesystem>
 
 #include "service.hpp"
+#include "main_functions.hpp"
 
 bool service_chech_if_exist(char* &service_name);
 void service_not_exist(char* &service_name);
@@ -14,6 +15,9 @@ int service_main(int argc, char *argv[]) {
 	for (int i = 0; i < argc; i++) {
 		if (strcmp(argv[i], "-h") == 0) {
 			service_show_help();
+			return 0;
+		} else if (strcmp(argv[i], "-v") == 0) {
+			show_ver("service");
 			return 0;
 		}
 	}
