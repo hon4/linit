@@ -4,7 +4,7 @@
 #include "inc/service.hpp"
 #include "inc/main_functions.hpp"
 
-std::string linit_version = "0.0.1";
+const std::string linit_version = "0.0.1";
 std::map<std::string, std::string> conf = read_config();
 
 int main(int argc, char *argv[]) {
