@@ -1,7 +1,7 @@
 #include <iostream>
 #include <map>
 #include "inc/config.hpp"
-#include "inc/service.hpp"
+#include "inc/service.cpp"
 
 std::string linit_version = "0.0.1";
 std::map<std::string, std::string> conf = read_config();
