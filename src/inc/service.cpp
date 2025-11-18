@@ -1,6 +1,8 @@
 #include <iostream>
 #include <filesystem>
 
+#include "service.hpp"
+
 bool service_chech_if_exist(char* &service_name);
 void service_not_exist(char* &service_name);
 int service_start(char* &service_name);
