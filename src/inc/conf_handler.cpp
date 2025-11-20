@@ -2,7 +2,7 @@
 #include <fstream>
 #include "conf_handler.hpp"
 
-std::map<std::string, std::string> read_conf(std::string path) {
+std::map<std::string, std::string> conf_read(std::string path) {
 	std::map<std::string, std::string> ret;
 	std::ifstream oppened_file(path);
 	std::string line;
