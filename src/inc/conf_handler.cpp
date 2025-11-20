@@ -1,5 +1,6 @@
 #include <map>
 #include <fstream>
+#include "conf_handler.hpp"
 
 std::map<std::string, std::string> read_conf(std::string path) {
 	std::map<std::string, std::string> ret;
